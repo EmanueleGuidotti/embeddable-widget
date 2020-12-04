@@ -14,9 +14,6 @@ Just clone it and get going.
 # install all dependencies.
 $ npm i
 
-#Start json server
-json-server --watch model.json
-
 # Start developing and serve your app:
 npm start
 
