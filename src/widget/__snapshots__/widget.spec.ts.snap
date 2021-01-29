@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Widget class Events works properly should setParking 1`] = `
+Widget {
+  "dictionary": Object {
+    "bookYourParking": "Prenota il tuo parcheggio a",
+    "featuresTitle": "Sono inclusi i seguenti servizi:",
+    "indoorSpace": "Posto auto coperto",
+    "insuranceExcluded": "Assicurazione esclusa",
+    "insuranceIncluded": "Assicurazione inclusa",
+    "outdoorSpace": "Posto auto scoperto",
+  },
+  "parking": Array [
+    Object {
+      "id": 123,
+      "indoor": false,
+      "insurance": false,
+      "price": "13.56 EUR",
+    },
+    Object {
+      "id": 456,
+      "indoor": false,
+      "insurance": true,
+      "price": "18.99 EUR",
+    },
+    Object {
+      "id": 243,
+      "indoor": true,
+      "insurance": true,
+      "price": "23.56 EUR",
+    },
+    Object {
+      "id": 700,
+      "indoor": true,
+      "insurance": false,
+      "price": "16.49 EUR",
+    },
+  ],
+  "parkingSlots": Array [
+    <div
+      class="parking__item selected"
+      data-id="123"
+      data-indoor="Posto auto scoperto"
+      data-insurance="Assicurazione esclusa"
+      data-price="13.56 EUR"
+    >
+      13.56 EUR
+    </div>,
+    <div
+      class="parking__item"
+      data-id="456"
+      data-indoor="Posto auto scoperto"
+      data-insurance="Assicurazione inclusa"
+      data-price="18.99 EUR"
+    >
+      18.99 EUR
+    </div>,
+    <div
+      class="parking__item"
+      data-id="243"
+      data-indoor="Posto auto coperto"
+      data-insurance="Assicurazione inclusa"
+      data-price="23.56 EUR"
+    >
+      23.56 EUR
+    </div>,
+    <div
+      class="parking__item"
+      data-id="700"
+      data-indoor="Posto auto coperto"
+      data-insurance="Assicurazione esclusa"
+      data-price="16.49 EUR"
+    >
+      16.49 EUR
+    </div>,
+  ],
+  "setParking": [MockFunction] {
+    "calls": Array [
+      Array [
+        Object {
+          "id": 123,
+          "indoor": false,
+          "insurance": false,
+          "price": "13.56 EUR",
+        },
+      ],
+    ],
+    "results": Array [
+      Object {
+        "type": "return",
+        "value": undefined,
+      },
+    ],
+  },
+  "templateSlot": <div>
+    
+                    
+    <section
+      class="vendor"
+    >
+      
+                        
+      <div
+        class="vendor__toggleable"
+      >
+        
+                            
+        <p
+          class="vendor__name"
+        />
+        
+                            
+        <p
+          class="vendor__captureTxt"
+        />
+        
+                            
+        <button
+          class="vendor__btn"
+        >
+          open
+        </button>
+        
+                        
+      </div>
+      
+                        
+      <div
+        class="vendor__features"
+      >
+        
+                            
+        <div
+          class="features__detail"
+        >
+          
+                                
+          <div
+            class="vendor__map-container"
+          >
+            <img
+              alt="parking-map"
+              class="vendor__map"
+            />
+          </div>
+          
+                                
+          <div
+            class="features__list-container"
+          >
+            
+                                    
+            <p
+              class="features__title"
+            />
+            
+                                    
+            <ul
+              class="features__list"
+            />
+            
+                                
+          </div>
+          
+                            
+        </div>
+        
+                        
+      </div>
+      
+                    
+    </section>
+    
+                    
+    <section
+      class="parking__slots"
+    >
+      
+                    
+      <div
+        class="parking__item selected"
+        data-id="123"
+        data-indoor="Posto auto scoperto"
+        data-insurance="Assicurazione esclusa"
+        data-price="13.56 EUR"
+      >
+        13.56 EUR
+      </div>
+      <div
+        class="parking__item"
+        data-id="456"
+        data-indoor="Posto auto scoperto"
+        data-insurance="Assicurazione inclusa"
+        data-price="18.99 EUR"
+      >
+        18.99 EUR
+      </div>
+      <div
+        class="parking__item"
+        data-id="243"
+        data-indoor="Posto auto coperto"
+        data-insurance="Assicurazione inclusa"
+        data-price="23.56 EUR"
+      >
+        23.56 EUR
+      </div>
+      <div
+        class="parking__item"
+        data-id="700"
+        data-indoor="Posto auto coperto"
+        data-insurance="Assicurazione esclusa"
+        data-price="16.49 EUR"
+      >
+        16.49 EUR
+      </div>
+    </section>
+  </div>,
+  "vendor": Object {
+    "departureAirport": "Bergamo Orio al Serio",
+    "features": Array [
+      "Parcheggio ParkinGo della tipologia selezionata",
+      "Navetta da/per aeroporto 24h",
+      "Vigilanza e custodia del mezzo 24h",
+      "Ripristino gratuito del calo di batteria della tua auto",
+    ],
+    "map": "http://lorempixel.com/370/390",
+    "name": "ParkinGo",
+  },
+}
+`;
+
+exports[`Widget class Events works properly should toggleOpenClose 1`] = `
+<div>
+  
+                    
+  <section
+    class="vendor"
+  >
+    
+                        
+    <div
+      class="vendor__toggleable"
+    >
+      
+                            
+      <p
+        class="vendor__name"
+      />
+      
+                            
+      <p
+        class="vendor__captureTxt"
+      />
+      
+                            
+      <button
+        class="vendor__btn"
+      >
+        close
+      </button>
+      
+                        
+    </div>
+    
+                        
+    <div
+      class="vendor__features opened"
+    >
+      
+                            
+      <div
+        class="features__detail"
+      >
+        
+                                
+        <div
+          class="vendor__map-container"
+        >
+          <img
+            alt="parking-map"
+            class="vendor__map"
+          />
+        </div>
+        
+                                
+        <div
+          class="features__list-container"
+        >
+          
+                                    
+          <p
+            class="features__title"
+          />
+          
+                                    
+          <ul
+            class="features__list"
+          />
+          
+                                
+        </div>
+        
+                            
+      </div>
+      
+                        
+    </div>
+    
+                    
+  </section>
+  
+                    
+  <section
+    class="parking__slots"
+  >
+    
+                    
+  </section>
+</div>
+`;
+
+exports[`Widget class should templateSlot created 1`] = `
+<div>
+  
+                    
+  <section
+    class="vendor"
+  >
+    
+                        
+    <div
+      class="vendor__toggleable"
+    >
+      
+                            
+      <p
+        class="vendor__name"
+      />
+      
+                            
+      <p
+        class="vendor__captureTxt"
+      />
+      
+                            
+      <button
+        class="vendor__btn"
+      >
+        open
+      </button>
+      
+                        
+    </div>
+    
+                        
+    <div
+      class="vendor__features"
+    >
+      
+                            
+      <div
+        class="features__detail"
+      >
+        
+                                
+        <div
+          class="vendor__map-container"
+        >
+          <img
+            alt="parking-map"
+            class="vendor__map"
+          />
+        </div>
+        
+                                
+        <div
+          class="features__list-container"
+        >
+          
+                                    
+          <p
+            class="features__title"
+          />
+          
+                                    
+          <ul
+            class="features__list"
+          />
+          
+                                
+        </div>
+        
+                            
+      </div>
+      
+                        
+    </div>
+    
+                    
+  </section>
+  
+                    
+  <section
+    class="parking__slots"
+  >
+    
+                    
+  </section>
+</div>
+`;
