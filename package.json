@@ -1,7 +1,7 @@
 {
-  "name": "lastminute-typescript-test",
+  "name": "embeddable-widget",
   "version": "0.0.1",
-  "description": "Last minute test",
+  "description": "Embeddable widget made for a Last minute test",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 9000 --inline --progress --profile --colors --watch --content-base src/ --mode development",
